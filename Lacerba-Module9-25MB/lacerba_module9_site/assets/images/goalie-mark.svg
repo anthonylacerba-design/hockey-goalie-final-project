@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
-  <title id="title">Hockey goalie emblem</title>
-  <desc id="desc">A stylized goalie mask with a hockey puck.</desc>
-  <defs><linearGradient id="ice" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#26b6d8"/><stop offset="1" stop-color="#8de8fa"/></linearGradient></defs>
-  <circle cx="60" cy="60" r="54" fill="#151637" stroke="url(#ice)" stroke-width="5"/>
-  <path d="M60 19c-22 0-35 17-35 39 0 23 15 42 35 42s35-19 35-42C95 36 82 19 60 19Z" fill="#eef8fc" stroke="#62439a" stroke-width="5"/>
-  <path d="M39 51h16v9H39zm26 0h16v9H65zM43 69l17 8 17-8M49 84h22" fill="none" stroke="#151637" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="91" cy="91" r="12" fill="url(#ice)" stroke="#151637" stroke-width="3"/>
-</svg>
