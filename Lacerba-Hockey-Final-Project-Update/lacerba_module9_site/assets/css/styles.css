@@ -1,0 +1,101 @@
+:root {
+  --navy: #151637;
+  --purple: #62439a;
+  --cyan: #26b6d8;
+  --ice: #eef8fc;
+  --ink: #182033;
+  --muted: #596477;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ice);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 2000;
+  padding: .75rem 1rem; background: #fff; color: var(--navy);
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+.navbar, .site-footer { background: linear-gradient(110deg, var(--navy), var(--purple)); }
+.navbar { box-shadow: 0 4px 18px #0c102b30; }
+.navbar-brand { font-weight: 800; letter-spacing: .07em; }
+.navbar-brand span { color: #9eeeff; }
+.nav-link { font-weight: 600; margin-left: .25rem; }
+.nav-link.active, .nav-link:hover { color: #9eeeff !important; }
+.hero {
+  background: linear-gradient(120deg, #151637 0%, #34245e 58%, #62439a 100%);
+  color: #fff;
+  overflow: hidden;
+}
+.hero-inner { padding-top: 5rem; padding-bottom: 5rem; }
+.eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .16em; }
+.hero-accent { color: #8de8fa; }
+.hero-copy { max-width: 37rem; color: #e7e7f5; }
+.hero-note { color: #a9eefa; font-size: .78rem; font-weight: 800; letter-spacing: .13em; }
+.hero-photo-wrap {
+  position: relative; padding: .65rem; border: 1px solid #ffffff55;
+  border-radius: 1.25rem; background: #ffffff12;
+}
+.hero-img {
+  display: block; width: 100%; max-height: 500px; min-height: 320px;
+  object-fit: cover; object-position: center; border-radius: .8rem;
+}
+.photo-caption {
+  padding: .8rem .35rem .15rem; font-size: .8rem; font-weight: 800; letter-spacing: .08em;
+}
+.photo-caption span { color: #a9eefa; }
+.section-heading { max-width: 48rem; margin-bottom: 2rem; }
+.section-title { color: #292052; font-weight: 800; }
+.text-purple { color: var(--purple); }
+.section-intro { color: var(--muted); font-size: 1.08rem; }
+.section-card {
+  border: 1px solid #dfe8f0; border-radius: 1rem; overflow: hidden;
+  box-shadow: 0 8px 28px #17203b14; transition: transform .2s ease, box-shadow .2s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px); box-shadow: 0 14px 34px #17203b20;
+}
+.feature-number {
+  padding: 1.1rem 1.5rem; color: #fff; background: var(--navy);
+  font-size: .75rem; font-weight: 800; letter-spacing: .14em;
+}
+.feature-card:nth-child(1) .feature-number { background: var(--navy); }
+.feature-link { color: #49327c; font-weight: 800; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.feature-link:hover { color: #087f9e; }
+.mission-panel {
+  color: #fff; border-radius: 1.25rem;
+  background: linear-gradient(115deg, var(--purple), var(--navy));
+  box-shadow: 0 12px 32px #17203b20;
+}
+.mission-panel h2 { color: #fff; }
+.site-footer { color: #fff; }
+a { overflow-wrap: anywhere; }
+.gallery-img { width: 100%; height: 270px; object-fit: cover; border-radius: .8rem; }
+.profile-img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 1rem; }
+.stat { background: #e2f6fb; border-radius: .8rem; padding: 1rem; text-align: center; height: 100%; }
+.stat strong { display: block; font-size: 1.5rem; color: #34245e; }
+iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: .8rem; }
+:focus-visible { outline: 3px solid #087f9e; outline-offset: 3px; }
+@media (max-width: 991.98px) { .hero-inner { padding-top: 3.5rem; padding-bottom: 3.5rem; } }
+@media (max-width: 576px) {
+  .gallery-img { height: 220px; }
+  .hero { text-align: center; }
+  .hero .d-flex { justify-content: center; }
+  .hero-img { min-height: 240px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+/* Module 9: SVG mark and interactive email form */
+.hero-eyebrow { display: flex; align-items: center; gap: .65rem; }
+.hero-mark { width: 2.5rem; height: 2.5rem; flex: 0 0 auto; }
+.contact-panel { background: #fff; }
+.updates-form .form-control { min-width: 0; }
+.form-message { color: var(--muted); font-size: .92rem; }
+.form-message-success { color: #176b43; font-weight: 700; }
+.form-message-error { color: #a32636; font-weight: 700; }
